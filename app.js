@@ -1,8 +1,8 @@
 const todoInput = document.getElementById('todo-input');
 const addBtn = document.getElementById('add-btn');
-const todolist = document.getElementById('todo-list');
+const todoList = document.getElementById('todo-list');
 
-function addTodo(){
+function addTodo() {
     const todoText = todoInput.value.trim();
     if (todoText === '') return;
     const li = document.createElement('li');
@@ -10,7 +10,7 @@ function addTodo(){
     const deleteBtn = document.createElement('button');
     deleteBtn.textContent = 'Delete';
     deleteBtn.classList.add('delete');
-    deleteBtn.addEventListener('click', () =>{
+    deleteBtn.addEventListener('click', () => {
         li.remove();
     });
     li.appendChild(deleteBtn);
@@ -20,15 +20,15 @@ function addTodo(){
 
 addBtn.addEventListener('click', addTodo);
 
-todoInput.addEventListener('keypress', (e) =>{
-    if (e.key === 'Enter'){
+todoInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
         addTodo();
     }
 });
 
-if('serviceWorker' in navigator){
+if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('./service-worker.js')
-    .then(reg => console.log('Service Worker registrado:', reg))
-    .catch(err => console.error('Error al registrar el Service Worker:', err));
+        .then(reg => console.log('Service Worker registrado:', reg))
+        .catch(err => console.error('Error al registrar el Service Worker:', err));
 }
 

@@ -1,4 +1,4 @@
-body{
+body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #9db5e6;
@@ -6,32 +6,32 @@ body{
     padding: 0;
 }
 
-h1{
+h1 {
     color: #333;
 }
 
-.todo-container{
+.todo-container {
     margin-top: 50px;
 }
 
-input{
+input {
     padding: 10px;
     font-size: 16px;
     width: 200px;
 }
 
-button{
+button {
     padding: 10px 20px;
     font-size: 16px;
     margin-left: 10px;
 }
 
-ul{
+ul {
     list-style-type: none;
     padding: 0;
 }
 
-li{
+li {
     padding: 10px;
     background-color: #9db5e6;
     margin: 5px 0;

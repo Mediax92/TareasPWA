@@ -32,4 +32,3 @@ if('serviceWorker' in navigator){
     .catch(err => console.error('Error al registrar el Service Worker:', err));
 }
 
-<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';"></meta>
